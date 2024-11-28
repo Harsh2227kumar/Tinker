@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Harsh's Portfolio</title>
+
+    <!-- CSS Styling in Head -->
+    <style>
+      /* Resetting margins and paddings */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      /* Navigation Bar */
+      nav {
+        background-color: #333;
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 20px;
+      }
+
+      nav .logo h1 {
+        font-size: 1.5rem;
+        color: #fff;
+      }
+
+      nav ul {
+        list-style: none;
+        display: flex;
+      }
+
+      nav ul li {
+        margin-left: 20px;
+      }
+
+      nav ul li a {
+        color: white;
+        text-decoration: none;
+        font-size: 1rem;
+      }
+
+      /* Home Section */
+      .home {
+        height: 100vh;
+        background: url("background.jpg") no-repeat center center/cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .home-content {
+        text-align: center;
+        color: white;
+      }
+
+      .home h2 {
+        font-size: 3rem;
+        margin-bottom: 10px;
+      }
+
+      .home p {
+        font-size: 1.5rem;
+        margin-bottom: 20px;
+      }
+
+      .home{
+        padding: 10px 20px;
+        background-color: #ff5722;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        text-decoration: none;
+      }
+      .btn{
+        padding: 10px 20px;
+        background-color: #333;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        text-decoration: none;
+      }
+
+
+      /* About Section */
+      .about {
+        padding: 60px 20px;
+        text-align: center;
+      }
+
+      .about h2 {
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+      }
+
+      .about p {
+        font-size: 1.2rem;
+        width: 80%;
+        margin: 0 auto;
+      }
+
+      /* Skills Section */
+      .skills {
+        background-color: #f4f4f4;
+        padding: 60px 20px;
+        text-align: center;
+      }
+
+      .skills h2 {
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+      }
+
+      .skills-list {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+      }
+
+      .skill-item {
+        width: 30%;
+        padding: 20px;
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      /* Portfolio Section */
+      .portfolio {
+        padding: 60px 20px;
+        text-align: center;
+      }
+
+      .portfolio-gallery {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+      }
+
+      .portfolio-item img {
+        width: 100%;
+        border-radius: 10px;
+      }
+
+      /* Contact Section */
+      .contact {
+        background-color: #f4f4f4;
+        padding: 60px 20px;
+        text-align: center;
+      }
+
+      .contact form {
+        display: inline-block;
+        width: 100%;
+        max-width: 500px;
+      }
+
+      .contact input,
+      .contact textarea {
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0;
+      }
+
+      .contact input[type="submit"] {
+        background-color: #333;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+      }
+
+      /* Footer */
+      footer {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 20px;
+        position: relative;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav>
+      <div class="logo">
+        <h1>Harsh</h1>
+      </div>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="home">
+      <div class="home-content">
+        <h2>Hello, I'm Harsh Kumar</h2>
+        <p>A passionate Computer Science student and a Software Developer.</p>
+        <a href="#about" class="btn">Learn More</a>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+      <h2>About Me</h2>
+      <p>
+        I'm currently studying Computer Science at Symbiosis Institute of
+        Technology. My interests include software development, badminton, and
+        digital marketing.
+      </p>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+      <h2>My Skills</h2>
+      <div class="skills-list">
+        <div class="skill-item">
+          <h3>Programming Languages</h3>
+          <p>C, C++, HTML, CSS, JavaScript</p>
+        </div>
+        <div class="skill-item">
+          <h3>Web Development</h3>
+          <p>HTML, CSS, JavaScript, React</p>
+        </div>
+        <div class="skill-item">
+          <h3>Other</h3>
+          <p>Badminton Player, Guitarist</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+      <h2>My Projects</h2>
+      <div class="portfolio-gallery">
+        <div class="portfolio-item">
+          <img src="project1.jpg" alt="Project 1" />
+          <h3>Project 1</h3>
+        </div>
+        <div class="portfolio-item">
+          <img src="project2.jpg" alt="Project 2" />
+          <h3>Project 2</h3>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+      <h2>Contact Me</h2>
+      <form action="#">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required /><br /><br />
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required /><br /><br />
+        <textarea
+          name="message"
+          id="message"
+          cols="30"
+          rows="5"
+          placeholder="Your message here"
+        ></textarea
+        ><br /><br />
+        <input type="submit" value="Send Message" />
+      </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2024 Harsh Bhongade. All Rights Reserved.</p>
+    </footer>
+  </body>
+</html>
